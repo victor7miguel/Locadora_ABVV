@@ -29,13 +29,13 @@ Funcionário:
 
 Administrador:
 - Atributos: nome, id (cpf), senha, telefone, endereço, salário
-- Funções: Mesmas funções do funcionário, CRUD de funcionários, gerar relatório de rendimentos mensal
+- Funções: funções atribuídas ao funcionário, CRUD de funcionários, gerar relatório de rendimentos mensal
 
 Veículo:
 - Atributos: modelo, cor, ano, febricante, capacidade, descrição
-- 
+
 Estoque:
-Atributos: veículo, quantidade
+- Atributos: veículo, quantidade
 
 
 ## Requisitos do projeto
