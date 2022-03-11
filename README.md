@@ -1,7 +1,5 @@
 # Locadora ABVV
 
-# Projeto Locadora ABVV
-
 Ideias de projeto podem vir de:
  
  * https://www.localiza.com/brasil/pt-br
