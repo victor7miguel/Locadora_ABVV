@@ -20,22 +20,22 @@ O sistema de locação de veículos conta com um catálogo de veículos (modelo,
 Entidades:
 
 Cliente:
-- Atributos: nome, id (cpf), senha, telefone, email, forma de pagamento, habilitação
+- Atributos: nome, id (cpf), senha, telefone, email, endereço, forma de pagamento, habilitação
 - Funções: locar veículos, listar veículos disponíveis;
 
 Funcionário:
-- Atributos: nome, id (cpf), senha, telefone, endereço, salário
-- Funções: CRUD de clientes, CRUD de veículos,listar clientes ativos, relatórios de veículos disponíveis, relatórios de veículos alugados.
+- Atributos: nome, id (cpf), senha, telefone, email, endereço, salário, função
+- Funções: CRUD de clientes, CRUD de veículos, listar clientes ativos, listar de veículos disponíveis, listar de veículos alugados.
 
 Administrador:
-- Atributos: nome, id (cpf), senha, telefone, endereço, salário
-- Funções: funções atribuídas ao funcionário, CRUD de funcionários, gerar relatório de rendimentos mensal
+- Atributos: nome, id (cpf), senha, telefone, email, endereço, salário, função, matrícula
+- Funções: CRUD de clientes, CRUD de funcionários, CRUD de veículos, listar clientes ativos, listar de veículos disponíveis, listar de veículos alugados, gerar relatório de rendimentos mensal
 
 Veículo:
-- Atributos: modelo, cor, ano, febricante, capacidade, descrição
+- Atributos: modelo, cor, ano, fabricante, capacidade, descrição
 
-Estoque:
-- Atributos: veículo, quantidade
+Locação:
+- 
 
 
 ## Requisitos do projeto
