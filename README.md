@@ -57,7 +57,7 @@ Fabricante:
 
 * **REQ3** - Um cliente pode alugar apenas 1 veículo por locação.
 
-* **REQ4** - O valor total a pagar será calculado pela quilometragem rodada mais o valor fixo dos dias.
+* **REQ4** - O valor total a pagar será calculado baseado na quantidade de dias.
 
 * **REQ5** - Caso o cliente não devolva no dia limite da locação, um valor de multa será adicionado no valor total a pagar levando em consideração os dias excedentes.
 
