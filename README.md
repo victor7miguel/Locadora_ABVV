@@ -50,6 +50,6 @@ Estoque:
 
 * **REQ5** - O sistema deve permitir o gerenciamento (Create, Recover, Update e Delete - CRUD) de **veículos**. Este gerenciamento é atribuído aos perfis do **administrador** e **funcionário**.
 
-* **REQ7** - Cada aluguel deve ter os dados do cliente, os dados do veículo, data do aluguel e da devolução do veículo.
+* **REQ6** - Cada aluguel deve ter os dados do cliente, os dados do veículo, data do aluguel e da devolução do veículo.
 
-* **REQ8** - O sistema deve calcular e aplicar multa caso o cliente não devolva o veículo na data acordada.
+* **REQ7** - O sistema deve calcular e aplicar multa caso o cliente não devolva o veículo na data acordada.
