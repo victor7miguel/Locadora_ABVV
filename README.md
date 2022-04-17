@@ -44,10 +44,12 @@ Estoque:
 
 * **REQ2** - O sistema deve permitir o aluguel de veículos previamente cadastrados e salvá-los como em um histórico de aluguel por cliente. Cada aluguel de veículo deve ser associado a um único cliente.
 
-* **REQ3** - O sistema deve permitir o gerenciamento (Create, Recover, Update e Delete - CRUD) de funcionários, clientes e veículos e essa ação pode ser feita por funcionários.
+* **REQ3** - O sistema deve permitir o gerenciamento (Create, Recover, Update e Delete - CRUD) de **Administradores** e **funcionários**. Este gerenciamento é atribuído ao perfil do **administrador**.
 
-* **REQ4** - O sistema deve permitir o gerenciamento (CRUD) de funcionários da empresa e essa ação somente poderá ser executada pelo gerente. O gerente também pode executar todas as funcionalidades que um funcionário pode executar.
+* **REQ4** - O sistema deve permitir o gerenciamento (Create, Recover, Update e Delete - CRUD) de **clientes**. Este gerenciamento é atribuído aos perfis do **administrador** e **funcionário**.
 
-* **REQ5** - Cada aluguel deve ter os dados do cliente, os dados do veículo, data do aluguel e da devolução do veículo.
+* **REQ5** - O sistema deve permitir o gerenciamento (Create, Recover, Update e Delete - CRUD) de **veículos**. Este gerenciamento é atribuído aos perfis do **administrador** e **funcionário**.
 
-* **REQ6** - O sistema deve calcular e aplicar multa caso o cliente não devolva o veículo na data acordada.
+* **REQ7** - Cada aluguel deve ter os dados do cliente, os dados do veículo, data do aluguel e da devolução do veículo.
+
+* **REQ8** - O sistema deve calcular e aplicar multa caso o cliente não devolva o veículo na data acordada.
