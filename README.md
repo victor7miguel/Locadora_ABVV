@@ -35,7 +35,13 @@ Veículo:
 - Atributos: modelo, cor, ano, fabricante, capacidade, descrição
 
 Locação:
-- 
+- Atributos: dataInicio, dataFim, dias, valor
+
+Modelo:
+- Atributos: nomeModelo, ano
+
+Fabricante:
+- Atributos: nomeFabricante
 
 
 ## Requisitos do projeto
