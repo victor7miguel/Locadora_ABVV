@@ -1,4 +1,4 @@
-module com.example.locadora_abvv {
+    module com.example.locadora_abvv {
     requires javafx.controls;
     requires javafx.fxml;
 

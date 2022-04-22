@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="src" target="11" />
+      <module name="Locadora_ABVV" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>
