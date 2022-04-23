@@ -55,7 +55,7 @@ Fabricante:
 
 * **REQ2** - O sistema deve permitir o aluguel de veículos previamente cadastrados e salvá-los em um histórico de aluguel por cliente. Cada aluguel de veículo deve ser associado a um único cliente.
 
-* **REQ3** - Um cliente pode alugar apenas 1 veículo por locação.
+* **REQ3** - Um cliente pode ter apenas 1 locação ativa
 
 * **REQ4** - O valor total a pagar será calculado baseado na quantidade de dias.
 
