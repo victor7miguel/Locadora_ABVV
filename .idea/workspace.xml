@@ -5,30 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="05819719-cf3c-4c7c-8029-d10852d324e0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/locadora_abvv/negocios/beans/Administrador.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/locadora_abvv/negocios/beans/Cliente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/locadora_abvv/negocios/beans/Fabricante.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/locadora_abvv/negocios/beans/Funcionario.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/locadora_abvv/negocios/beans/Locacao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/locadora_abvv/negocios/beans/Modelo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/locadora_abvv/negocios/beans/Pessoa.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/locadora_abvv/negocios/beans/Veiculo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/locadora_abvv/negocios/controladorAdm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/locadora_abvv/negocios/controladorCliente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/locadora_abvv/negocios/controladorFabricante.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/locadora_abvv/negocios/controladorFuncionario.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/locadora_abvv/negocios/controladorLocacao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/locadora_abvv/negocios/controladorModelo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/locadora_abvv/negocios/controladorPessoa.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/locadora_abvv/negocios/controladorVeiculo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/locadora_abvv/dados/ICrudAdministrador.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/locadora_abvv/dados/ICrudCliente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/locadora_abvv/dados/ICrudFabricante.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/locadora_abvv/dados/ICrudFuncionario.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/locadora_abvv/dados/ICrudLocacao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/locadora_abvv/dados/ICrudModelo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/locadora_abvv/dados/ICrudPessoa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/locadora_abvv/dados/ICrudVeiculo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/locadora_abvv/dados/IRepositorio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/locadora_abvv/dados/RepoFiles.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/locadora_abvv/dados/Repositorio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/locadora_abvv/exceptions/ElementoExisteException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/locadora_abvv/exceptions/ElementoNaoExisteExcepcion.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/locadora_abvv/Diagrama de Classes de Dominio.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/locadora_abvv/Diagrama de Classes de Dominio.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/locadora_abvv/Diagrama de Classes de Dominio.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/locadora_abvv/Diagrama de Classes de Dominio.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Locadora_ABVV.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Locadora_ABVV.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/locadora_abvv/negocios/controladorAdm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/locadora_abvv/negocios/controladorAdm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/locadora_abvv/negocios/controladorCliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/locadora_abvv/negocios/controladorCliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/locadora_abvv/negocios/controladorFabricante.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/locadora_abvv/negocios/controladorFabricante.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/locadora_abvv/negocios/controladorFuncionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/locadora_abvv/negocios/controladorFuncionario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/locadora_abvv/negocios/controladorLocacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/locadora_abvv/negocios/controladorLocacao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/locadora_abvv/negocios/controladorModelo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/locadora_abvv/negocios/controladorModelo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/locadora_abvv/negocios/controladorPessoa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/locadora_abvv/negocios/controladorPessoa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/locadora_abvv/negocios/controladorVeiculo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/locadora_abvv/negocios/controladorVeiculo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +38,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -90,7 +91,7 @@
       <recent name="com.example" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.com.HelloApplication">
+  <component name="RunManager" selected="Application.HelloApplication">
     <configuration name="HelloApplication" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.locadora_abvv.HelloApplication" />
       <module name="Locadora_ABVV" />
@@ -107,7 +108,7 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.com.HelloApplication" />
+      <item itemvalue="Application.HelloApplication" />
       <item itemvalue="JUnit.All in Locadora_ABVV" />
     </list>
     <recent_temporary>
@@ -136,6 +137,7 @@
       <workItem from="1650673201617" duration="511000" />
       <workItem from="1650673745260" duration="227000" />
       <workItem from="1650673990645" duration="222000" />
+      <workItem from="1650849360148" duration="5691000" />
     </task>
     <servers />
   </component>
