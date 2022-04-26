@@ -8,13 +8,19 @@ public class Veiculo {
     private boolean veiculoLocado;
     private double valorMulta;
 
-    public Veiculo(String cor, int capacidade, String descricao, String placa, boolean veiculoLocado, double valorMulta) {
+    private Modelo modelo;
+
+    private Fabricante fabricante;
+
+    public Veiculo(String cor, int capacidade, String descricao, String placa, boolean veiculoLocado, double valorMulta, Modelo modelo, Fabricante fabricante) {
         this.cor = cor;
         this.capacidade = capacidade;
         this.descricao = descricao;
         this.placa = placa;
         this.veiculoLocado = veiculoLocado;
         this.valorMulta = valorMulta;
+        this.modelo = modelo;
+        this.fabricante = fabricante;
     }
 
     public String getCor() {
@@ -64,4 +70,22 @@ public class Veiculo {
     public void setValorMulta(double valorMulta) {
         this.valorMulta = valorMulta;
     }
+
+    public Modelo getModelo() {
+        return modelo;
+    }
+
+    public void setModelo(Modelo modelo) {
+        this.modelo = modelo;
+    }
+
+    public Fabricante getFabricante() {
+        return fabricante;
+    }
+
+    public void setFabricante(Fabricante fabricante) {
+        this.fabricante = fabricante;
+    }
+
+
 }
