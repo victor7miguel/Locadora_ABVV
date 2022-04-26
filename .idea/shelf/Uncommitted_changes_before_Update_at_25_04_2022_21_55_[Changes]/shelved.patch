@@ -1,0 +1,194 @@
+Index: src/main/java/com/example/locadora_abvv/negocios/controladorFabricante.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/example/locadora_abvv/negocios/controladorFabricante.java b/src/main/java/com/example/locadora_abvv/negocios/ControladorFabricante.java
+rename from src/main/java/com/example/locadora_abvv/negocios/controladorFabricante.java
+rename to src/main/java/com/example/locadora_abvv/negocios/ControladorFabricante.java
+--- a/src/main/java/com/example/locadora_abvv/negocios/controladorFabricante.java	
++++ b/src/main/java/com/example/locadora_abvv/negocios/ControladorFabricante.java	
+@@ -1,12 +1,12 @@
+ package com.example.locadora_abvv.negocios;
+ 
+-import com.example.locadora_abvv.dados.ICrudFabricante;
++import com.example.locadora_abvv.dados.IRepositorioFabricante;
+ import com.example.locadora_abvv.negocios.beans.Fabricante;
+ 
+-public class controladorFabricante {
+-   private ICrudFabricante fabricante;
++public class ControladorFabricante {
++   private IRepositorioFabricante fabricante;
+ 
+-    public controladorFabricante(ICrudFabricante fabricante) {
++    public ControladorFabricante(IRepositorioFabricante fabricante) {
+         this.fabricante = fabricante;
+     }
+ 
+Index: src/main/java/com/example/locadora_abvv/negocios/controladorCliente.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/example/locadora_abvv/negocios/controladorCliente.java b/src/main/java/com/example/locadora_abvv/negocios/ControladorCliente.java
+rename from src/main/java/com/example/locadora_abvv/negocios/controladorCliente.java
+rename to src/main/java/com/example/locadora_abvv/negocios/ControladorCliente.java
+--- a/src/main/java/com/example/locadora_abvv/negocios/controladorCliente.java	
++++ b/src/main/java/com/example/locadora_abvv/negocios/ControladorCliente.java	
+@@ -1,12 +1,12 @@
+ package com.example.locadora_abvv.negocios;
+ 
+-import com.example.locadora_abvv.dados.ICrudCliente;
++import com.example.locadora_abvv.dados.IRepositorioCliente;
+ import com.example.locadora_abvv.negocios.beans.Cliente;
+ 
+-public class controladorCliente {
+-   private ICrudCliente cliente;
++public class ControladorCliente {
++   private IRepositorioCliente cliente;
+ 
+-    public controladorCliente(ICrudCliente cliente) {
++    public ControladorCliente(IRepositorioCliente cliente) {
+         this.cliente = cliente;
+     }
+ 
+Index: src/main/java/com/example/locadora_abvv/negocios/controladorLocacao.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/example/locadora_abvv/negocios/controladorLocacao.java b/src/main/java/com/example/locadora_abvv/negocios/ControladorLocacao.java
+rename from src/main/java/com/example/locadora_abvv/negocios/controladorLocacao.java
+rename to src/main/java/com/example/locadora_abvv/negocios/ControladorLocacao.java
+--- a/src/main/java/com/example/locadora_abvv/negocios/controladorLocacao.java	
++++ b/src/main/java/com/example/locadora_abvv/negocios/ControladorLocacao.java	
+@@ -1,13 +1,13 @@
+ package com.example.locadora_abvv.negocios;
+ 
+-import com.example.locadora_abvv.dados.ICrudLocacao;
++import com.example.locadora_abvv.dados.IRepositorioLocacao;
+ import com.example.locadora_abvv.negocios.beans.Locacao;
+ 
+-public class controladorLocacao {
++public class ControladorLocacao {
+ 
+-    private ICrudLocacao locacao;
++    private IRepositorioLocacao locacao;
+ 
+-    public controladorLocacao(ICrudLocacao locacao) {
++    public ControladorLocacao(IRepositorioLocacao locacao) {
+         this.locacao = locacao;
+     }
+ 
+Index: src/main/java/com/example/locadora_abvv/negocios/controladorFuncionario.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/example/locadora_abvv/negocios/controladorFuncionario.java b/src/main/java/com/example/locadora_abvv/negocios/ControladorFuncionario.java
+rename from src/main/java/com/example/locadora_abvv/negocios/controladorFuncionario.java
+rename to src/main/java/com/example/locadora_abvv/negocios/ControladorFuncionario.java
+--- a/src/main/java/com/example/locadora_abvv/negocios/controladorFuncionario.java	
++++ b/src/main/java/com/example/locadora_abvv/negocios/ControladorFuncionario.java	
+@@ -1,13 +1,13 @@
+ package com.example.locadora_abvv.negocios;
+ 
+-import com.example.locadora_abvv.dados.ICrudFuncionario;
++import com.example.locadora_abvv.dados.IRepositorioFuncionario;
+ import com.example.locadora_abvv.negocios.beans.Funcionario;
+ 
+-public class controladorFuncionario {
++public class ControladorFuncionario {
+ 
+-    private ICrudFuncionario funcionario;
++    private IRepositorioFuncionario funcionario;
+ 
+-    public controladorFuncionario(ICrudFuncionario funcionario) {
++    public ControladorFuncionario(IRepositorioFuncionario funcionario) {
+         this.funcionario = funcionario;
+     }
+ 
+Index: src/main/java/com/example/locadora_abvv/negocios/controladorPessoa.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/example/locadora_abvv/negocios/controladorPessoa.java b/src/main/java/com/example/locadora_abvv/negocios/ControladorPessoa.java
+rename from src/main/java/com/example/locadora_abvv/negocios/controladorPessoa.java
+rename to src/main/java/com/example/locadora_abvv/negocios/ControladorPessoa.java
+--- a/src/main/java/com/example/locadora_abvv/negocios/controladorPessoa.java	
++++ b/src/main/java/com/example/locadora_abvv/negocios/ControladorPessoa.java	
+@@ -1,13 +1,13 @@
+ package com.example.locadora_abvv.negocios;
+ 
+-import com.example.locadora_abvv.dados.ICrudPessoa;
++import com.example.locadora_abvv.dados.IRepositorioPessoa;
+ import com.example.locadora_abvv.negocios.beans.Pessoa;
+ 
+-public class controladorPessoa {
++public class ControladorPessoa {
+ 
+-    private ICrudPessoa pessoa;
++    private IRepositorioPessoa pessoa;
+ 
+-    public controladorPessoa(ICrudPessoa pessoa) {
++    public ControladorPessoa(IRepositorioPessoa pessoa) {
+         this.pessoa = pessoa;
+     }
+ 
+Index: src/main/java/com/example/locadora_abvv/negocios/controladorModelo.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/example/locadora_abvv/negocios/controladorModelo.java b/src/main/java/com/example/locadora_abvv/negocios/ControladorModelo.java
+rename from src/main/java/com/example/locadora_abvv/negocios/controladorModelo.java
+rename to src/main/java/com/example/locadora_abvv/negocios/ControladorModelo.java
+--- a/src/main/java/com/example/locadora_abvv/negocios/controladorModelo.java	
++++ b/src/main/java/com/example/locadora_abvv/negocios/ControladorModelo.java	
+@@ -1,13 +1,13 @@
+ package com.example.locadora_abvv.negocios;
+ 
+-import com.example.locadora_abvv.dados.ICrudModelo;
++import com.example.locadora_abvv.dados.IRepositorioModelo;
+ import com.example.locadora_abvv.negocios.beans.Modelo;
+ 
+-public class controladorModelo {
++public class ControladorModelo {
+ 
+-    private ICrudModelo modelo;
++    private IRepositorioModelo modelo;
+ 
+-    public controladorModelo(ICrudModelo modelo) {
++    public ControladorModelo(IRepositorioModelo modelo) {
+         this.modelo = modelo;
+     }
+ 
+Index: src/main/java/com/example/locadora_abvv/negocios/controladorVeiculo.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/example/locadora_abvv/negocios/controladorVeiculo.java b/src/main/java/com/example/locadora_abvv/negocios/ControladorVeiculo.java
+rename from src/main/java/com/example/locadora_abvv/negocios/controladorVeiculo.java
+rename to src/main/java/com/example/locadora_abvv/negocios/ControladorVeiculo.java
+--- a/src/main/java/com/example/locadora_abvv/negocios/controladorVeiculo.java	
++++ b/src/main/java/com/example/locadora_abvv/negocios/ControladorVeiculo.java	
+@@ -1,13 +1,13 @@
+ package com.example.locadora_abvv.negocios;
+ 
+-import com.example.locadora_abvv.dados.ICrudVeiculo;
++import com.example.locadora_abvv.dados.IRepositorioVeiculo;
+ import com.example.locadora_abvv.negocios.beans.Veiculo;
+ 
+-public class controladorVeiculo {
++public class ControladorVeiculo {
+ 
+-    private ICrudVeiculo veiculo;
++    private IRepositorioVeiculo veiculo;
+ 
+-    public controladorVeiculo(ICrudVeiculo veiculo) {
++    public ControladorVeiculo(IRepositorioVeiculo veiculo) {
+         this.veiculo = veiculo;
+     }
+ 

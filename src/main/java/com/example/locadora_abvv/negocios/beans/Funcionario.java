@@ -3,12 +3,40 @@ package com.example.locadora_abvv.negocios.beans;
 public class Funcionario extends Pessoa{
 
     private double salario;
-    private String funcao;
+    private int matricula;
+    enum Funcao {
+        ATENDENTE(1), ADMINISTRADOR(2), RECEPCIONISTA(3);
 
-    public Funcionario(String nome, String cpf, String senha, String telefone, String email, String endereco, double salario, String funcao) {
+        private int valor;
+        Funcao (int valor){
+            this.valor=valor;
+        }
+    }
+
+    private Funcao funcao;
+
+    public Funcionario(String nome, String cpf, String senha, String telefone, String email, String endereco, double salario, int matricula, Funcao funcao) {
         super(nome, cpf, senha, telefone, email, endereco);
         this.salario = salario;
+        this.matricula = matricula;
         this.funcao = funcao;
+    }
+
+    public Funcao getFuncao() {
+        return funcao;
+    }
+
+    public void setFuncao(Funcao funcao) {
+        this.funcao = funcao;
+    }
+
+    public int getMatricula() {
+        return matricula;
+    }
+
+
+    public void setMatricula(int matricula) {
+        this.matricula = matricula;
     }
 
     public double getSalario() {
@@ -19,11 +47,5 @@ public class Funcionario extends Pessoa{
         this.salario = salario;
     }
 
-    public String getFuncao() {
-        return funcao;
-    }
 
-    public void setFuncao(String funcao) {
-        this.funcao = funcao;
-    }
 }

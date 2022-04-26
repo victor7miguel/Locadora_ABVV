@@ -6,14 +6,12 @@ public class Locacao {
     private LocalDateTime dataInicio;
     private LocalDateTime dataFim;
     private LocalDateTime dataEntrega;
-    private int diasLocados;
     private double valorDiaria;
 
-    public Locacao(LocalDateTime dataInicio, LocalDateTime dataFim, LocalDateTime dataEntrega, int diasLocados, double valorDiaria) {
+    public Locacao(LocalDateTime dataInicio, LocalDateTime dataFim, LocalDateTime dataEntrega, double valorDiaria) {
         this.dataInicio = dataInicio;
         this.dataFim = dataFim;
         this.dataEntrega = dataEntrega;
-        this.diasLocados = diasLocados;
         this.valorDiaria = valorDiaria;
     }
 
@@ -40,15 +38,6 @@ public class Locacao {
     public void setDataEntrega(LocalDateTime dataEntrega) {
         this.dataEntrega = dataEntrega;
     }
-
-    public int getDiasLocados() {
-        return diasLocados;
-    }
-
-    public void setDiasLocados(int diasLocados) {
-        this.diasLocados = diasLocados;
-    }
-
     public double getValorDiaria() {
         return valorDiaria;
     }
