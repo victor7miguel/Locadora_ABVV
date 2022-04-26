@@ -2,7 +2,7 @@ package com.example.locadora_abvv.dados;
 
 import com.example.locadora_abvv.negocios.beans.Pessoa;
 
-public interface ICrudPessoa {
+public interface IRepositorioPessoa {
 
     void cadastrar (Pessoa pessoa);
     Pessoa buscar (String cpf);
