@@ -5,7 +5,7 @@ public class Cliente extends Pessoa{
     private String cnh;
 
     public Cliente(String nome, String cpf, String senha, String telefone, String email, String endereco, String formaPagamento, String cnh) {
-        super(nome, cpf, senha, telefone, email, endereco);
+        super(nome, cpf, senha, telefone, email, endereco, dataNascimento);
         this.formaPagamento = formaPagamento;
         this.cnh = cnh;
     }

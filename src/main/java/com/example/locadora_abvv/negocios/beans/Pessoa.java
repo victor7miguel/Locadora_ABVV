@@ -7,14 +7,16 @@ public abstract class Pessoa {
     private String telefone;
     private String email;
     private String endereco;
+    private Date dataNascimento;
 
-    public Pessoa(String nome, String cpf, String senha, String telefone, String email, String endereco) {
+    public Pessoa(String nome, String cpf, String senha, String telefone, String email, String endereco, Date dataNascimento) {
         this.nome = nome;
         this.cpf = cpf;
         this.senha = senha;
         this.telefone = telefone;
         this.email = email;
         this.endereco = endereco;
+        this.dataNascimento = dataNascimento;
     }
 
 
@@ -65,5 +67,19 @@ public abstract class Pessoa {
 
     public void setEndereco(String endereco) {
         this.endereco = endereco;
+    }
+
+    public Date getDataNascimento() {
+        return dataNascimento;
+    }
+
+    public void setDataNascimento(Date dataNascimento) {
+        this.dataNascimento = dataNascimento;
+    }
+
+    public static int calcularIdade(){
+        localDate dataAtual = LocalDate.now();
+        Period periodo = Period.between(dataNascimento, dataAtual);
+        return periodo.getYears();
     }
 }
