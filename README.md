@@ -19,28 +19,23 @@ O sistema de locação de veículos conta com um catálogo de veículos (modelo,
 
 Entidades:
 
-Pessoa: //(cliente, funcionario e administrador herdam de pessoa)
-- Atributos: nome, cpf (id), senha, telefone, email, endereço
-- Funções: listar veículos
+Pessoa: //(cliente e funcionario herdam de pessoa)
+- Atributos: nome, cpf (id), senha, telefone, email, endereço, idade
 
+ 
 Cliente:
-- Atributos: forma de pagamento, habilitação (cnh), cliente locado
-- Funções: temLocação
+- Atributos: forma de pagamento, habilitação (cnh)
 
 Funcionário:
-- Atributos: salário, função
-- Funções: consultar cliente, listar clientes ativos, listar veiculos alugados
+- Atributos: salário, matricula, função
 
-Administrador: //(herda de funcionario)
-- Atributos: matrícula
-- Funções: consultar funcionário, gerar relatorio mensal
 
 Veículo:
-- Atributos: cor, capacidade, descricao, placa, veiculoLocado, valorMulta
+- Atributos: cor, capacidade, descricao, placa, valorMulta
 
 Locação:
-- Atributos: dataInicio, dataFim, dataEntrega, dias, valor
-- Funções: locar, calcularValorTotal, calcularMulta
+- Atributos: dataInicio, dataFim, dataEntrega, valorDiaria
+- Funções: calcularValorTotal, calcularMulta
 
 Modelo:
 - Atributos: nomeModelo, ano
