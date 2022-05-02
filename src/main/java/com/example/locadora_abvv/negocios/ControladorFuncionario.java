@@ -6,11 +6,11 @@ import com.example.locadora_abvv.exceptions.ElementoExisteException;
 import com.example.locadora_abvv.exceptions.ElementoNaoExisteExcepcion;
 import com.example.locadora_abvv.negocios.beans.Funcionario;
 
-public class controladorFuncionario {
+public class ControladorFuncionario {
 
     private IRepositorio<Funcionario> repositorioFuncionarios;
 
-    public controladorFuncionario(IRepositorio<Funcionario> repositorioFuncionarios) {
+    public ControladorFuncionario(IRepositorio<Funcionario> repositorioFuncionarios) {
         this.repositorioFuncionarios = new Repositorio<>("funcionarios.dat");
     }
 
