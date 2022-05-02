@@ -21,19 +21,26 @@ Entidades:
 
 Pessoa: //(cliente, funcionario e administrador herdam de pessoa)
 - Atributos: nome, cpf (id), senha, telefone, email, endereço
+- Funções: listar veículos
 
 Cliente:
-- Atributos: forma de pagamento, habilitação (cnh)
+- Atributos: forma de pagamento, habilitação (cnh), cliente locado
+- Funções: temLocação
 
 Funcionário:
-- Atributos: salário, matricula, função
+- Atributos: salário, função
+- Funções: consultar cliente, listar clientes ativos, listar veiculos alugados
+
+Administrador: //(herda de funcionario)
+- Atributos: matrícula
+- Funções: consultar funcionário, gerar relatorio mensal
 
 Veículo:
 - Atributos: cor, capacidade, descricao, placa, veiculoLocado, valorMulta
 
 Locação:
-- Atributos: dataInicio, dataFim, dataEntrega, valorDiaria
-- Funções: calcularValorTotal, calcularMulta
+- Atributos: dataInicio, dataFim, dataEntrega, dias, valor
+- Funções: locar, calcularValorTotal, calcularMulta
 
 Modelo:
 - Atributos: nomeModelo, ano
