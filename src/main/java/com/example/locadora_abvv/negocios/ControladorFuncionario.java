@@ -15,7 +15,9 @@ public class controladorFuncionario {
     }
 
     public void cadastrar(Funcionario f) throws ElementoExisteException {
-        this.repositorioFuncionarios.cadastrar(f);
+        if (f.calcularIdade >= 18) {
+            this.repositorioFuncionarios.cadastrar(f);
+        }
     }
 
     public void listar(){
