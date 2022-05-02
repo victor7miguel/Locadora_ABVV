@@ -77,7 +77,7 @@ public abstract class Pessoa {
         this.dataNascimento = dataNascimento;
     }
 
-    public static int calcularIdade(){
+    public int calcularIdade(){
         localDate dataAtual = LocalDate.now();
         Period periodo = Period.between(dataNascimento, dataAtual);
         return periodo.getYears();
