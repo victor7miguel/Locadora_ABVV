@@ -1,29 +1,32 @@
 package com.example.locadora_abvv.negocios;
 
-import com.example.locadora_abvv.dados.ICrudVeiculo;
+import com.example.locadora_abvv.dados.IRepositorio;
+import com.example.locadora_abvv.dados.Repositorio;
+import com.example.locadora_abvv.exceptions.ElementoExisteException;
+import com.example.locadora_abvv.exceptions.ElementoNaoExisteExcepcion;
 import com.example.locadora_abvv.negocios.beans.Veiculo;
 
 public class controladorVeiculo {
 
-    private ICrudVeiculo veiculo;
+    private IRepositorio<Veiculo> repositorioVeiculos;
 
-    public controladorVeiculo(ICrudVeiculo veiculo) {
-        this.veiculo = veiculo;
+    public controladorVeiculo(IRepositorio<Veiculo> repositorioVeiculos) {
+        this.repositorioVeiculos = new Repositorio<>("veiculos.dat");
     }
 
-    public void cadastrar(Veiculo vei){
-        this.veiculo.cadastrar(vei);
+    public void cadastrar(Veiculo v) throws ElementoExisteException {
+        this.repositorioVeiculos.cadastrar(v);
     }
 
-    public Veiculo buscar (String placa){
-        return this.veiculo.buscar(placa);
+    public void listar(){
+        this.repositorioVeiculos.listar();
     }
 
-    public void remover (String placa){
-        this.veiculo.remover(placa);
+    public void remover(Veiculo v) throws ElementoNaoExisteExcepcion {
+        this.repositorioVeiculos.remover(v);
     }
 
-    public Veiculo atualizar (Veiculo vei){
-        return this.veiculo.atualizar(vei);
+    public void atualizar(Veiculo v) throws ElementoNaoExisteExcepcion {
+        this.repositorioVeiculos.atualizar(v);
     }
 }

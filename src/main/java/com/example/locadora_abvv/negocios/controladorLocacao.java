@@ -1,29 +1,32 @@
 package com.example.locadora_abvv.negocios;
 
-import com.example.locadora_abvv.dados.ICrudLocacao;
+import com.example.locadora_abvv.dados.IRepositorio;
+import com.example.locadora_abvv.dados.Repositorio;
+import com.example.locadora_abvv.exceptions.ElementoExisteException;
+import com.example.locadora_abvv.exceptions.ElementoNaoExisteExcepcion;
 import com.example.locadora_abvv.negocios.beans.Locacao;
 
 public class controladorLocacao {
 
-    private ICrudLocacao locacao;
+    private IRepositorio<Locacao> repositorioLocacoes;
 
-    public controladorLocacao(ICrudLocacao locacao) {
-        this.locacao = locacao;
+    public controladorLocacao(IRepositorio<Locacao> repositorioLocacoes) {
+        this.repositorioLocacoes = new Repositorio<>("locacoes.dat");
     }
 
-    public void cadastrar(Locacao loca){
-        this.locacao.cadastrar(loca);
+    public void cadastrar(Locacao l) throws ElementoExisteException {
+        this.repositorioLocacoes.cadastrar(l);
     }
 
-    public Locacao buscar(String cpf){
-        return this.locacao.buscar(cpf);
+    public void listar(){
+        this.repositorioLocacoes.listar();
     }
 
-    public void remover(String cpf){
-        this.locacao.remover(cpf);
+    public void remover(Locacao l) throws ElementoNaoExisteExcepcion {
+        this.repositorioLocacoes.remover(l);
     }
 
-    public Locacao atualizar(Locacao loca){
-        return this.locacao.atualizar(loca);
+    public void atualizar(Locacao l) throws ElementoNaoExisteExcepcion {
+        this.repositorioLocacoes.atualizar(l);
     }
 }
