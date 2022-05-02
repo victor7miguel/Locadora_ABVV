@@ -5,21 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="05819719-cf3c-4c7c-8029-d10852d324e0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/locadora_abvv/dados/IRepositorioCliente.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/locadora_abvv/dados/IRepositorioFabricante.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/locadora_abvv/dados/IRepositorioFuncionario.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/locadora_abvv/dados/IRepositorioLocacao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/locadora_abvv/dados/IRepositorioModelo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/locadora_abvv/dados/IRepositorioPessoa.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/locadora_abvv/dados/IRepositorioVeiculo.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/locadora_abvv/negocios/ControladorCliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/locadora_abvv/negocios/ControladorCliente.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/locadora_abvv/negocios/ControladorFabricante.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/locadora_abvv/negocios/ControladorFabricante.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/locadora_abvv/negocios/ControladorFuncionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/locadora_abvv/negocios/ControladorFuncionario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/locadora_abvv/negocios/controladorLocacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/locadora_abvv/negocios/controladorLocacao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/locadora_abvv/negocios/controladorModelo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/locadora_abvv/negocios/controladorModelo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/locadora_abvv/negocios/controladorPessoa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/locadora_abvv/negocios/controladorPessoa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/locadora_abvv/negocios/controladorVeiculo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/locadora_abvv/negocios/controladorVeiculo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/locadora_abvv/negocios/ControladorLocacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/locadora_abvv/negocios/ControladorLocacao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/locadora_abvv/negocios/ControladorModelo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/locadora_abvv/negocios/ControladorModelo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/locadora_abvv/negocios/ControladorPessoa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/locadora_abvv/negocios/ControladorPessoa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/locadora_abvv/negocios/ControladorVeiculo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/locadora_abvv/negocios/ControladorVeiculo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,6 +123,7 @@
       <workItem from="1650849360148" duration="5691000" />
       <workItem from="1651344293359" duration="43000" />
       <workItem from="1651505142964" duration="5301000" />
+      <workItem from="1651513180362" duration="9000" />
     </task>
     <servers />
   </component>
