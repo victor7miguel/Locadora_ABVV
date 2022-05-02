@@ -50,7 +50,7 @@ public class Locacao {
 
     public double calcularValorTotal(double valor, int dias, int diasExcedentes, int diasUtilizados, double ValorMultaTotal){
         Period periodo = Period.between(dataInicio, dataFim);
-        Period periodoMulta = Period.between(dataInicio, dataEntrega);
+        Period periodoUtilizado = Period.between(dataInicio, dataEntrega);
         dias = periodo.getDays();
         diasUtilizados = periodoMulta.getDays();
         diasExcedentes = periodoMulta.getDays() - dias;
