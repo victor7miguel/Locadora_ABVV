@@ -1,29 +1,32 @@
 package com.example.locadora_abvv.negocios;
 
-import com.example.locadora_abvv.dados.ICrudFuncionario;
+import com.example.locadora_abvv.dados.IRepositorio;
+import com.example.locadora_abvv.dados.Repositorio;
+import com.example.locadora_abvv.exceptions.ElementoExisteException;
+import com.example.locadora_abvv.exceptions.ElementoNaoExisteExcepcion;
 import com.example.locadora_abvv.negocios.beans.Funcionario;
 
 public class controladorFuncionario {
 
-    private ICrudFuncionario funcionario;
+    private IRepositorio<Funcionario> repositorioFuncionarios;
 
-    public controladorFuncionario(ICrudFuncionario funcionario) {
-        this.funcionario = funcionario;
+    public controladorFuncionario(IRepositorio<Funcionario> repositorioFuncionarios) {
+        this.repositorioFuncionarios = new Repositorio<>("funcionarios.dat");
     }
 
-    public void cadastrar(Funcionario func){
-        this.funcionario.cadastrar(func);
+    public void cadastrar(Funcionario f) throws ElementoExisteException {
+        this.repositorioFuncionarios.cadastrar(f);
     }
 
-    public Funcionario buscar(String cpf){
-        return this.funcionario.buscar(cpf);
+    public void listar(){
+        this.repositorioFuncionarios.listar();
     }
 
-    public void remover(String cpf){
-        this.funcionario.remover(cpf);
+    public void remover(Funcionario f) throws ElementoNaoExisteExcepcion {
+        this.repositorioFuncionarios.remover(f);
     }
 
-    public Funcionario atualizar (Funcionario func){
-        return this.funcionario.atualizar(func);
+    public void atualizar(Funcionario f) throws ElementoNaoExisteExcepcion {
+        this.repositorioFuncionarios.atualizar(f);
     }
 }

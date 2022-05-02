@@ -1,29 +1,32 @@
 package com.example.locadora_abvv.negocios;
 
-import com.example.locadora_abvv.dados.ICrudModelo;
+import com.example.locadora_abvv.dados.IRepositorio;
+import com.example.locadora_abvv.dados.Repositorio;
+import com.example.locadora_abvv.exceptions.ElementoExisteException;
+import com.example.locadora_abvv.exceptions.ElementoNaoExisteExcepcion;
 import com.example.locadora_abvv.negocios.beans.Modelo;
 
 public class controladorModelo {
 
-    private ICrudModelo modelo;
+    private IRepositorio<Modelo> repositorioModelos;
 
-    public controladorModelo(ICrudModelo modelo) {
-        this.modelo = modelo;
+    public controladorModelo(IRepositorio<Modelo> repositorioModelos) {
+        this.repositorioModelos = new Repositorio<>("modelos.dat");
     }
 
-    public void cadastrar(Modelo model){
-        this.modelo.cadastrar(model);
+    public void cadastrar(Modelo m) throws ElementoExisteException {
+        this.repositorioModelos.cadastrar(m);
     }
 
-    public Modelo buscar (String nome){
-        return this.modelo.buscar(nome);
+    public void listar(){
+        this.repositorioModelos.listar();
     }
 
-    public void remover(String nome){
-        this.modelo.remover(nome);
+    public void remover(Modelo m) throws ElementoNaoExisteExcepcion {
+        this.repositorioModelos.remover(m);
     }
 
-    public Modelo atualizar(Modelo model){
-        return this.modelo.atualizar(model);
+    public void atualizar(Modelo m) throws ElementoNaoExisteExcepcion {
+        this.repositorioModelos.atualizar(m);
     }
 }
