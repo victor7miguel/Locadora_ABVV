@@ -1,42 +1,45 @@
 package com.example.locadora_abvv.negocios.beans;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.Period;
+
 import com.example.locadora_abvv.negocios.beans.Veiculo;
 
 public class Locacao {
-    private LocalDateTime dataInicio;
-    private LocalDateTime dataFim;
-    private LocalDateTime dataEntrega;
+    private LocalDate dataInicio;
+    private LocalDate dataFim;
+    private LocalDate dataEntrega;
     private double valorDiaria;
 
-    public Locacao(LocalDateTime dataInicio, LocalDateTime dataFim, LocalDateTime dataEntrega, double valorDiaria) {
+    public Locacao(LocalDate dataInicio, LocalDate dataFim, LocalDate dataEntrega, double valorDiaria) {
         this.dataInicio = dataInicio;
         this.dataFim = dataFim;
         this.dataEntrega = dataEntrega;
         this.valorDiaria = valorDiaria;
     }
 
-    public LocalDateTime getDataInicio() {
+    public LocalDate getDataInicio() {
         return dataInicio;
     }
 
-    public void setDataInicio(LocalDateTime dataInicio) {
+    public void setDataInicio(LocalDate dataInicio) {
         this.dataInicio = dataInicio;
     }
 
-    public LocalDateTime getDataFim() {
+    public LocalDate getDataFim() {
         return dataFim;
     }
 
-    public void setDataFim(LocalDateTime dataFim) {
+    public void setDataFim(LocalDate dataFim) {
         this.dataFim = dataFim;
     }
 
-    public LocalDateTime getDataEntrega() {
+    public LocalDate getDataEntrega() {
         return dataEntrega;
     }
 
-    public void setDataEntrega(LocalDateTime dataEntrega) {
+    public void setDataEntrega(LocalDate dataEntrega) {
         this.dataEntrega = dataEntrega;
     }
 
@@ -48,13 +51,13 @@ public class Locacao {
         this.valorDiaria = valorDiaria;
     }
 
-    public double calcularValorTotal(double valor, int dias, int diasExcedentes, int diasUtilizados, double ValorMultaTotal){
+    public double calcularValorTotal(double valor, int dias, int diasExcedentes, int diasUtilizados, double ValorMulta){
         Period periodo = Period.between(dataInicio, dataFim);
         Period periodoUtilizado = Period.between(dataInicio, dataEntrega);
         dias = periodo.getDays();
-        diasUtilizados = periodoMulta.getDays();
-        diasExcedentes = periodoMulta.getDays() - dias;
-        valorMultaTotal = diasExcedentes * valorMulta;
+        diasUtilizados = periodoUtilizado.getDays();
+        diasExcedentes = periodoUtilizado.getDays() - dias;
+        double valorMultaTotal = diasExcedentes * ValorMulta;
         valor = (valorDiaria * diasUtilizados) + valorMultaTotal;
         return valor;
     }
