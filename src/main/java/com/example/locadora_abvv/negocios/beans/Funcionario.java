@@ -1,7 +1,5 @@
 package com.example.locadora_abvv.negocios.beans;
 
-import java.time.LocalDate;
-
 public class Funcionario extends Pessoa{
 
     private double salario;
@@ -17,7 +15,7 @@ public class Funcionario extends Pessoa{
 
     private Funcao funcao;
 
-    public Funcionario(String nome, String cpf, String senha, String telefone, String email, String endereco, LocalDate dataNascimento, double salario, int matricula, Funcao funcao) {
+    public Funcionario(String nome, String cpf, String senha, String telefone, String email, String endereco, double salario, int matricula, Funcao funcao) {
         super(nome, cpf, senha, telefone, email, endereco, dataNascimento);
         this.salario = salario;
         this.matricula = matricula;
