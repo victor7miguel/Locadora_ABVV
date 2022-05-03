@@ -6,8 +6,6 @@ import com.example.locadora_abvv.exceptions.ElementoExisteException;
 import com.example.locadora_abvv.exceptions.ElementoNaoExisteExcepcion;
 import com.example.locadora_abvv.negocios.beans.Fabricante;
 
-import java.util.List;
-
 public class controladorFabricante {
 
     private IRepositorio<Fabricante> repositorioFabricantes;

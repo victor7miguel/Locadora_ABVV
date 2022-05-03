@@ -1,5 +1,8 @@
 package com.example.locadora_abvv.negocios.beans;
 
+import java.time.LocalDate;
+import java.time.Period;
+
 public abstract class Pessoa {
     private String nome;
     private String cpf;
@@ -7,9 +10,9 @@ public abstract class Pessoa {
     private String telefone;
     private String email;
     private String endereco;
-    private Date dataNascimento;
+    private LocalDate dataNascimento;
 
-    public Pessoa(String nome, String cpf, String senha, String telefone, String email, String endereco, Date dataNascimento) {
+    public Pessoa(String nome, String cpf, String senha, String telefone, String email, String endereco, LocalDate dataNascimento) {
         this.nome = nome;
         this.cpf = cpf;
         this.senha = senha;
@@ -69,16 +72,16 @@ public abstract class Pessoa {
         this.endereco = endereco;
     }
 
-    public Date getDataNascimento() {
+    public LocalDate getDataNascimento() {
         return dataNascimento;
     }
 
-    public void setDataNascimento(Date dataNascimento) {
+    public void setDataNascimento(LocalDate dataNascimento) {
         this.dataNascimento = dataNascimento;
     }
 
     public int calcularIdade(){
-        localDate dataAtual = LocalDate.now();
+        LocalDate dataAtual = LocalDate.now();
         Period periodo = Period.between(dataNascimento, dataAtual);
         return periodo.getYears();
     }
