@@ -1,6 +1,7 @@
 package com.example.locadora_abvv.negocios.beans;
 
 import java.time.LocalDateTime;
+import com.example.locadora_abvv.negocios.beans.Veiculo;
 
 public class Locacao {
     private LocalDateTime dataInicio;
@@ -38,6 +39,7 @@ public class Locacao {
     public void setDataEntrega(LocalDateTime dataEntrega) {
         this.dataEntrega = dataEntrega;
     }
+
     public double getValorDiaria() {
         return valorDiaria;
     }
@@ -45,4 +47,16 @@ public class Locacao {
     public void setValorDiaria(double valorDiaria) {
         this.valorDiaria = valorDiaria;
     }
+
+    public double calcularValorTotal(double valor, int dias, int diasExcedentes, int diasUtilizados, double ValorMultaTotal){
+        Period periodo = Period.between(dataInicio, dataFim);
+        Period periodoUtilizado = Period.between(dataInicio, dataEntrega);
+        dias = periodo.getDays();
+        diasUtilizados = periodoMulta.getDays();
+        diasExcedentes = periodoMulta.getDays() - dias;
+        valorMultaTotal = diasExcedentes * valorMulta;
+        valor = (valorDiaria * diasUtilizados) + valorMultaTotal;
+        return valor;
+    }
+
 }
