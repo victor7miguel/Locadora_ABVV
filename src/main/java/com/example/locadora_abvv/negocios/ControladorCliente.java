@@ -41,6 +41,9 @@ public class ControladorCliente {
         this.repositorioClientes.atualizar(c);
     }
 
+    public void devolver (Cliente c) {
+        c.setLocacao(null);
+    }
 }
 
 
