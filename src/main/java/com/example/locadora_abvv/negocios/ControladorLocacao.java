@@ -6,12 +6,19 @@ import com.example.locadora_abvv.exceptions.ElementoExisteException;
 import com.example.locadora_abvv.exceptions.ElementoNaoExisteExcepcion;
 import com.example.locadora_abvv.negocios.beans.Locacao;
 
-public class controladorLocacao {
+public class ControladorLocacao {
 
     private IRepositorio<Locacao> repositorioLocacoes;
+    private static ControladorLocacao instance;
 
-    public controladorLocacao(IRepositorio<Locacao> repositorioLocacoes) {
+    public ControladorLocacao() {
         this.repositorioLocacoes = new Repositorio<>("locacoes.dat");
+    }
+
+    public static ControladorLocacao getInstance(){
+        if (instance == null)
+            instance = new ControladorLocacao();
+        return instance;
     }
 
     public void cadastrar(Locacao l) throws ElementoExisteException {
