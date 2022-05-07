@@ -29,7 +29,6 @@ Cliente:
 Funcionário:
 - Atributos: salário, matricula, função
 
-
 Veículo:
 - Atributos: cor, capacidade, descricao, placa, valorMulta
 
@@ -46,7 +45,7 @@ Fabricante:
 
 ## Requisitos do projeto
 
-* **REQ1** - O sistema deve controlar o acesso através de login e senha. Os usuários do sistema serão do tipo cliente, funcionário e administrador.
+* **REQ1** - O sistema deve controlar o acesso através de login e senha. Os usuários do sistema serão do tipo cliente e funcionário.
 
 * **REQ2** - O sistema deve permitir o aluguel de veículos previamente cadastrados e salvá-los em um histórico de aluguel por cliente. Cada aluguel de veículo deve ser associado a um único cliente.
 
@@ -56,10 +55,10 @@ Fabricante:
 
 * **REQ5** - Caso o cliente não devolva no dia limite da locação, um valor de multa será adicionado no valor total a pagar levando em consideração os dias excedentes.
 
-* **REQ6** - O sistema deve permitir o gerenciamento (Create, Recover, Update e Delete - CRUD) de **funcionários**. Este gerenciamento é atribuído ao perfil do **administrador**.
+* **REQ6** - O sistema deve permitir o gerenciamento (Create, Recover, Update e Delete - CRUD) de **funcionários**. Este gerenciamento é atribuído ao perfil do **funcionário** que tem a função de **administrador**.
 
-* **REQ7** - O sistema deve permitir o gerenciamento (Create, Recover, Update e Delete - CRUD) de **clientes**. Este gerenciamento é atribuído aos perfis do **administrador** e **funcionário**.
+* **REQ7** - O sistema deve permitir o gerenciamento (Create, Recover, Update e Delete - CRUD) de **clientes**. Este gerenciamento é atribuído aos perfis do **funcionário** de qualquer função.
 
-* **REQ8** - O sistema deve permitir o gerenciamento (Create, Recover, Update e Delete - CRUD) de **veículos**. Este gerenciamento é atribuído aos perfis do **administrador** e **funcionário**.
+* **REQ8** - O sistema deve permitir o gerenciamento (Create, Recover, Update e Delete - CRUD) de **veículos**. Este gerenciamento é atribuído aos perfis do **funcionário** de qualquer função.
 
 * **REQ9** - Cada aluguel deve ter os dados do cliente, os dados do veículo, data do aluguel e da devolução do veículo.
