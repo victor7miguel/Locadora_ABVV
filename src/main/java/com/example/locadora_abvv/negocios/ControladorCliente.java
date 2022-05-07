@@ -6,13 +6,23 @@ import com.example.locadora_abvv.exceptions.ElementoExisteException;
 import com.example.locadora_abvv.exceptions.ElementoNaoExisteExcepcion;
 import com.example.locadora_abvv.negocios.beans.Cliente;
 
-public class controladorCliente {
+public class ControladorCliente {
     private IRepositorio<Cliente> repositorioClientes;
 
-    public controladorCliente(IRepositorio<Cliente> repositorioClientes) {
+    private static ControladorCliente instance;
+
+    private Cliente cliente;
+
+    public ControladorCliente() {
         this.repositorioClientes = new Repositorio<>("clientes.dat");
     }
 
+    public static ControladorCliente getInstance(){
+        if (instance == null){
+            instance = new ControladorCliente();
+        }
+        return instance;
+    }
     public void cadastrar(Cliente c) throws ElementoExisteException {
         this.repositorioClientes.cadastrar(c);
     }
@@ -28,6 +38,7 @@ public class controladorCliente {
     public void atualizar (Cliente c) throws ElementoNaoExisteExcepcion {
         this.repositorioClientes.atualizar(c);
     }
+
 }
 
 

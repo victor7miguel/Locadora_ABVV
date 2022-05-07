@@ -9,9 +9,16 @@ import com.example.locadora_abvv.negocios.beans.Funcionario;
 public class ControladorFuncionario {
 
     private IRepositorio<Funcionario> repositorioFuncionarios;
+    private static ControladorFuncionario instance;
 
-    public ControladorFuncionario(IRepositorio<Funcionario> repositorioFuncionarios) {
+    public ControladorFuncionario() {
         this.repositorioFuncionarios = new Repositorio<>("funcionarios.dat");
+    }
+
+    public static ControladorFuncionario getInstance(){
+        if (instance == null)
+            instance = new ControladorFuncionario();
+        return instance;
     }
 
     public void cadastrar(Funcionario f) throws ElementoExisteException {

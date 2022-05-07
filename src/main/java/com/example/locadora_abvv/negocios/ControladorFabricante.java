@@ -6,14 +6,20 @@ import com.example.locadora_abvv.exceptions.ElementoExisteException;
 import com.example.locadora_abvv.exceptions.ElementoNaoExisteExcepcion;
 import com.example.locadora_abvv.negocios.beans.Fabricante;
 
-import java.util.List;
-
-public class controladorFabricante {
+public class ControladorFabricante {
 
     private IRepositorio<Fabricante> repositorioFabricantes;
 
-    public controladorFabricante(IRepositorio<Fabricante> repositorioFabricantes) {
+    private static ControladorFabricante instance;
+
+    public ControladorFabricante() {
         this.repositorioFabricantes = new Repositorio<>("fabricantes.dat");
+    }
+
+    public static ControladorFabricante getInstance(){
+        if (instance == null)
+            instance = new ControladorFabricante();
+        return instance;
     }
 
     public void cadastrar(Fabricante f) throws ElementoExisteException {
