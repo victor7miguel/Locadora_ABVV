@@ -24,7 +24,9 @@ public class ControladorCliente {
         return instance;
     }
     public void cadastrar(Cliente c) throws ElementoExisteException {
-        this.repositorioClientes.cadastrar(c);
+        if(c.calcularIdade() >= 18 && c.getCnh() != null) {
+            this.repositorioClientes.cadastrar(c);
+        }
     }
 
     public void listar(){
