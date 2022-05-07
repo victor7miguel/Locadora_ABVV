@@ -7,7 +7,7 @@ public class Funcionario extends Pessoa{
     private double salario;
     private int matricula;
     enum Funcao {
-        ATENDENTE(1), ADMINISTRADOR(2), RECEPCIONISTA(3);
+        ATENDENTE(1), ADMINISTRADOR(2);
 
         private int valor;
         Funcao (int valor){

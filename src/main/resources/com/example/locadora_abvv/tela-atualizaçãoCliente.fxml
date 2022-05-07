@@ -20,7 +20,7 @@
                         <Font size="10.0" />
                      </font>
                   </Button>
-                  <Text nodeOrientation="LEFT_TO_RIGHT" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="Cadastro de cliente" textAlignment="CENTER" wrappingWidth="546.3203125">
+                  <Text nodeOrientation="LEFT_TO_RIGHT" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="Atualização de cadastro" textAlignment="CENTER" wrappingWidth="546.3203125">
                      <font>
                         <Font size="42.0" />
                      </font>
@@ -40,13 +40,13 @@
                         <Text layoutX="15.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data de nascimento:" />
                         <Text layoutX="15.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Forma de pagamento:" />
                         <Text layoutX="15.0" layoutY="280.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CNH:" />
-                        <TextField layoutX="70.0" layoutY="23.0" prefHeight="20.0" prefWidth="320.0" promptText="Digite nome completo" />
+                        <TextField layoutX="70.0" layoutY="23.0" prefHeight="20.0" prefWidth="320.0" promptText="Digite o nome completo" />
                         <TextField layoutX="70.0" layoutY="53.0" maxLength="11" prefHeight="25.0" prefWidth="320.0" promptText="Digite apenas números do CPF" />
                         <TextField layoutX="70.0" layoutY="83.0" prefHeight="25.0" prefWidth="320.0" promptText="Digite a senha" />
                         <TextField layoutX="70.0" layoutY="113.0" maxLength="11" prefHeight="20.0" prefWidth="320.0" promptText="Digite DDD + número" />
                         <TextField layoutX="70.0" layoutY="143.0" prefHeight="20.0" prefWidth="320.0" promptText="Digite o email" />
                         <TextField layoutX="70.0" layoutY="173.0" prefHeight="20.0" prefWidth="320.0" promptText="Digite o endereço" />
-                        <TextField layoutX="70.0" layoutY="263.0" prefHeight="20.0" prefWidth="320.0" promptText="Digite o número da sua CNH" />
+                        <TextField layoutX="70.0" layoutY="263.0" prefHeight="20.0" prefWidth="320.0" promptText="Digite o número da CNH do cliente" />
                         <DatePicker layoutX="131.0" layoutY="203.0" />
                         <Button layoutX="488.0" layoutY="263.0" mnemonicParsing="false" text="Enviar" />
                         <TextField layoutX="137.0" layoutY="233.0" prefHeight="20.0" prefWidth="320.0" promptText="Digite a forma de pagamento" />

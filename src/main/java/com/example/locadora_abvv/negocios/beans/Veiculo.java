@@ -5,19 +5,18 @@ public class Veiculo {
     private int capacidade;
     private String descricao;
     private String placa;
-    private boolean veiculoLocado;
+
     private double valorMulta;
 
     private Modelo modelo;
 
     private Fabricante fabricante;
 
-    public Veiculo(String cor, int capacidade, String descricao, String placa, boolean veiculoLocado, double valorMulta, Modelo modelo, Fabricante fabricante) {
+    public Veiculo(String cor, int capacidade, String descricao, String placa, double valorMulta, Modelo modelo, Fabricante fabricante) {
         this.cor = cor;
         this.capacidade = capacidade;
         this.descricao = descricao;
         this.placa = placa;
-        this.veiculoLocado = veiculoLocado;
         this.valorMulta = valorMulta;
         this.modelo = modelo;
         this.fabricante = fabricante;
@@ -53,14 +52,6 @@ public class Veiculo {
 
     public void setPlaca(String placa) {
         this.placa = placa;
-    }
-
-    public boolean isVeiculoLocado() {
-        return veiculoLocado;
-    }
-
-    public void setVeiculoLocado(boolean veiculoLocado) {
-        this.veiculoLocado = veiculoLocado;
     }
 
     public double getValorMulta() {
