@@ -23,8 +23,12 @@ public class ControladorVeiculo {
     }
 
     public void cadastrar(Veiculo v) throws ElementoExisteException {
-        this.repositorioVeiculos.cadastrar(v);
+        LocalDate dataAtual = LocalDate.now();
+        if(Veiculo.getAno() < dataAtual.getYear() + 2) {
+            this.repositorioVeiculos.cadastrar(v);
+        }
     }
+
 
     public void listar(){
         this.repositorioVeiculos.listar();
