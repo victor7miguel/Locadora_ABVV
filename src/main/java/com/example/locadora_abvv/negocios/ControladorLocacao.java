@@ -25,6 +25,7 @@ public class ControladorLocacao {
     public void cadastrar(Cliente c, Locacao l) throws ElementoExisteException {
         if(c.getLocacao() == null) {
             this.repositorioLocacoes.cadastrar(l);
+            c.setLocacao(l);
         }
     }
 
