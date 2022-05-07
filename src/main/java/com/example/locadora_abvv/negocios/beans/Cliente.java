@@ -29,7 +29,13 @@ public class Cliente extends Pessoa{
     public void setCnh(String cnh) {
         this.cnh = cnh;
     }
+
     public Locacao getLocacao() {
         return locacao;
     }
+
+    public void setLocacao(Locacao locacao) {
+        this.locacao = locacao;
+    }
+
 }
